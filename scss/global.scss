@@ -1,0 +1,409 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Top-section*/
+.navbar {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.hamburguer {
+    background-color: white;
+    width: 30px;
+    cursor: pointer;
+
+    &__bar {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.navbar-light {
+    border-color: transparent;
+    color: white !important;
+}
+
+.dropdown-menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+    padding: 20px 20px 30px 0;
+    border-radius: 10px;
+    li {
+        border-bottom: 1.5px solid rgb(209, 209, 209);
+        padding: 10px 10px 10px 0;
+        margin-left:15px;
+        font-size: 1rem;
+        align-items:center ;
+        letter-spacing: 2;
+        @include breakpoint(xs) {
+            font-size: 0.8rem;
+        }
+        @include breakpoint(xxs) {
+            font-size: 0.7rem;
+        }
+    }
+}
+.dropdown-item {
+    text-align: left;
+    padding-left: 0;  
+    font-weight: 700;
+}
+
+#top_section {
+    height: 100vh;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    @include breakpoint(sm) {
+        height: 100%;
+    }
+    p {
+        font-size: 9rem;
+        font-weight: 300;
+        line-height: 1.4;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        @include breakpoint(md) {
+            font-size: 8rem;
+        }
+        @include breakpoint(sm) {
+            font-size: 80px;
+            font-weight: 400;
+        }
+        @include breakpoint(xs) {
+            font-size: 60px;
+        }
+        @include breakpoint(xxs) {
+            font-size: 50px;
+            margin-bottom: 5px;
+            font-weight: 400;
+            line-height: 2;
+            margin-left: 0px;
+        }
+    }
+    .top_section_text {
+        background: url(../assets/Barra\ Innovation.svg) no-repeat;
+        background-position: 0 85%;
+        background-size: contain;
+    }
+}
+
+/* foco section*/
+.foco_section {
+    background-image: url(../assets/banner_foco.jpg);
+    background-size: cover;
+    padding: 80px 0 130px 0;
+    @include breakpoint(md) {
+        padding: 60px 0 80px 0;
+    }
+    @include breakpoint(xs) {
+        padding: 40px 0 80px 0;
+    }
+    @include breakpoint(xxs) {
+        padding: 60px 0 40px 0;
+    }
+    img {
+        margin-left: 10px;
+    }
+    p {
+        font-size: 50px;
+        margin-left: 10px;
+
+        @include breakpoint(xxs) {
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+}
+
+/*Second-section*/
+.second_banner {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.second_cards {
+    display: flex;   
+    align-items: flex-start;
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second_cards,
+.second_cards_mobile {
+    .card {
+        justify-content: space-between;
+        padding: 15px 65px;
+        border: none;
+
+        .card_title {
+            display: flex;
+        }
+        .card_title p {
+            margin-left: 10px;
+            align-items: flex-end;
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .card_logo {
+            width: 3rem;
+       
+        }
+        .card_paragraph {
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 1.4;
+            @include breakpoint(xxs) {
+                font-size: 15px;
+                letter-spacing: 1;
+            }
+        }
+        .card_item {
+            font-size: 16px;
+            font-weight: 400;
+            align-items: center;
+            @include breakpoint(xxs) {
+                font-size: 14px;
+            }
+        }
+
+        .card_logo {
+            width: 3rem;
+        }
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .carousel-control-prev {
+        color: rgb(156, 154, 154);
+        margin-right: 100px;
+    }
+    .carousel-control-next {
+        color: rgb(156, 154, 154);
+    }
+}
+
+/*contact*/
+
+.contact_div {
+    margin-top: 70px;
+    display: flex;
+}
+.barra_contact {
+    width: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.card_content_title {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    @include breakpoint(md) {
+        font-size: 60px;
+        font-weight: 400;
+    }
+    @include breakpoint(xs) {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    @include breakpoint(xxs) {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+}
+.card_content_info {
+    display: flex;
+    align-items: flex-start;
+    .card_content_p {
+        font-weight: 300;
+        font-size: 30px;
+        margin-right: 70px;
+        @include breakpoint(md) {
+            font-size: 20px;
+        }
+        @include breakpoint(xs) {
+            font-size: 15px;
+            margin-right: 60px;
+        }
+        @include breakpoint(xxs) {
+            font-size: 15px;
+            margin-right: 60px;
+        }
+    }
+
+    .card_content_btn {
+        background-color: #7774ec;
+        font-weight: 500;
+        color: white;
+        padding: 20px 50px;
+        border: none;
+        border-radius: 10px;
+        min-width: 30%;
+        font-size: 30px;
+    }
+    @include breakpoint(md) {
+        flex-direction: column;
+    }
+    @include breakpoint(xs) {
+        flex-direction: column;
+        .card_content_btn {
+            font-weight: 400;
+            padding: 10px 40px;
+            min-width: 30%;
+            font-size: 20px;
+        }
+    }
+    @include breakpoint(xxs) {
+        flex-direction: column;
+    }
+}
+
+.section_Emerging {
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.emerging-technologies {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 200px 0 40px;
+    background-color: #f7f7ff;
+    @include breakpoint(xxs) {
+        padding: 100px 0 20px;
+    }
+
+    &__hand1 {
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    &__hand2 {
+        position: absolute;
+        right: 0;
+        top: -40px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        @include breakpoint(xxs) {
+            flex-direction: column;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+    &__title{
+        font-size: 45px;
+        @include breakpoint(xxs) {
+          font-size: 30px;
+        }
+    }
+    &__vertical-divider {
+        width: 5px;
+        background-color: black;
+        margin: 0 20px;
+       
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include breakpoint(xxs) {
+            margin-top: 10px;
+        }
+    }
+
+    &__horizontal-divider {
+        width: 100%;
+        height: 15px;
+        background: linear-gradient(to right, #4dcdc0, #8fd9cb, #a5eee7);
+        @include breakpoint(xxs) {
+            height: 10px;
+        }
+    }
+    @include breakpoint(md) {
+        &__hand1 {
+            width: 350px;
+        }
+        &__hand2 {
+            width: 350px;
+        }
+    }
+    @include breakpoint(xs) {
+        &__hand1 {
+            width: 250px;
+        }
+        &__hand2 {
+            width: 250px;
+        }
+        &__content {
+            font-size: 24px;
+        }
+        &__list {
+            font-size: 16px;
+        }
+    }
+    @include breakpoint(xxs) {
+        &__hand1 {
+            width: 150px;
+        }
+        &__hand2 {
+            width: 100px;
+        }
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .footer_img_text {
+        display: flex;
+        align-items: center;
+        img {
+            width: 1rem;
+        }
+        p {
+            align-items: center;
+            margin: 0;
+            font-size: 1rem;
+            @include breakpoint(xxs) {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+.footer_logo {
+    float: right;
+    margin-right: 20px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px 20px;
+    @include breakpoint(xxs) {
+        margin-right: 10px;
+    }
+}
+

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="655" viewBox="0 0 1366 655">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.023" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbb4cf"/>
+      <stop offset="0.207" stop-color="#c2c0f6"/>
+      <stop offset="0.512" stop-color="#c2c0f6"/>
+      <stop offset="0.558" stop-color="#bfc4f5"/>
+      <stop offset="1" stop-color="#a4efe7"/>
+    </linearGradient>
+  </defs>
+  <g id="banner_inicio" data-name="banner inicio" transform="translate(0 -72)">
+    <rect id="Rectángulo_628" data-name="Rectángulo 628" width="1366" height="655" transform="translate(0 72)" fill="#fff"/>
+    <g id="Barra_Innovation" data-name="Barra Innovation" transform="translate(190 428)">
+      <rect id="Rectángulo_617" data-name="Rectángulo 617" width="778" height="30" fill="url(#linear-gradient)"/>
+      <rect id="Rectángulo_611" data-name="Rectángulo 611" width="778" height="30" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Design_Innovation_Technology" data-name="Design
+Innovation
+Technology" transform="translate(185 265)" fill="#35373b" font-size="154" font-family="Montserrat-ExtraLight, Montserrat" font-weight="200"><tspan x="0" y="0">Design</tspan><tspan x="0" y="184">Innovation</tspan><tspan x="0" y="368">Technology</tspan></text>
+  </g>
+</svg>

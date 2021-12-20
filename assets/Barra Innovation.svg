@@ -1,0 +1,13 @@
+<svg id="Barra_Innovation" data-name="Barra Innovation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="30" viewBox="0 0 778 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.023" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbb4cf"/>
+      <stop offset="0.207" stop-color="#c2c0f6"/>
+      <stop offset="0.512" stop-color="#c2c0f6"/>
+      <stop offset="0.558" stop-color="#bfc4f5"/>
+      <stop offset="1" stop-color="#a4efe7"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectángulo_617" data-name="Rectángulo 617" width="778" height="30" fill="url(#linear-gradient)"/>
+  <rect id="Rectángulo_611" data-name="Rectángulo 611" width="778" height="30" fill="url(#linear-gradient)"/>
+</svg>
