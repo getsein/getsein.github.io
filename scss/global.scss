@@ -42,9 +42,9 @@
     li {
         border-bottom: 1.5px solid rgb(209, 209, 209);
         padding: 10px 10px 10px 0;
-        margin-left:15px;
+        margin-left: 15px;
         font-size: 1rem;
-        align-items:center ;
+        align-items: center;
         letter-spacing: 2;
         @include breakpoint(xs) {
             font-size: 0.8rem;
@@ -56,7 +56,7 @@
 }
 .dropdown-item {
     text-align: left;
-    padding-left: 0;  
+    padding-left: 0;
     font-weight: 700;
 }
 
@@ -69,13 +69,13 @@
         height: 100%;
     }
     p {
-        font-size: 9rem;
+        font-size: 7.5rem;
         font-weight: 300;
         line-height: 1.4;
         margin-bottom: 5px;
         margin-left: 50px;
         @include breakpoint(md) {
-            font-size: 8rem;
+            font-size: 7rem;
         }
         @include breakpoint(sm) {
             font-size: 80px;
@@ -104,6 +104,11 @@
     background-image: url(../assets/banner_foco.jpg);
     background-size: cover;
     padding: 80px 0 130px 0;
+
+    @media (min-width: 1450px) {
+        padding: 100px 0 200px 0;
+    }
+
     @include breakpoint(md) {
         padding: 60px 0 80px 0;
     }
@@ -121,7 +126,7 @@
         margin-left: 10px;
 
         @include breakpoint(xxs) {
-            font-size: 30px;
+            font-size: 25px;
             margin-left: 10px;
         }
     }
@@ -134,7 +139,7 @@
 }
 
 .second_cards {
-    display: flex;   
+    display: flex;
     align-items: flex-start;
     margin-top: -40px;
     margin-right: 10px;
@@ -162,7 +167,6 @@
         }
         .card_logo {
             width: 3rem;
-       
         }
         .card_paragraph {
             font-weight: 300;
@@ -201,18 +205,25 @@
 /*contact*/
 
 .contact_div {
-    margin-top: 70px;
     display: flex;
+    min-height: 80vh;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    @include breakpoint(xxs) {
+        min-height: 80vh;
+    }
 }
 .barra_contact {
     width: 30px;
     padding-left: 20px;
     margin-right: 20px;
+    height: auto;
 }
 
 .card_content_title {
     font-size: 70px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 30px;
     @include breakpoint(md) {
         font-size: 60px;
@@ -243,10 +254,6 @@
             font-size: 15px;
             margin-right: 60px;
         }
-        @include breakpoint(xxs) {
-            font-size: 15px;
-            margin-right: 60px;
-        }
     }
 
     .card_content_btn {
@@ -258,6 +265,8 @@
         border-radius: 10px;
         min-width: 30%;
         font-size: 30px;
+        text-decoration: none;
+        text-align: center;
     }
     @include breakpoint(md) {
         flex-direction: column;
@@ -289,6 +298,21 @@
     @include breakpoint(xxs) {
         padding: 100px 0 20px;
     }
+    .emerging-technologies__sutext {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p {
+            font-size: 20px;
+
+            @include breakpoint(sm) {
+                font-size: 10px;
+            }
+            @include breakpoint(xxs) {
+                font-size: 9px;
+            }
+        }
+    }
 
     &__hand1 {
         position: absolute;
@@ -312,17 +336,16 @@
             margin-top: 10px;
         }
     }
-    &__title{
+    &__title {
         font-size: 45px;
         @include breakpoint(xxs) {
-          font-size: 30px;
+            font-size: 30px;
         }
     }
     &__vertical-divider {
         width: 5px;
         background-color: black;
         margin: 0 20px;
-       
     }
 
     &__list {
@@ -402,6 +425,116 @@
     background-color: black;
     padding: 5px;
     border-radius: 20px 20px;
+    @include breakpoint(xxs) {
+        margin-right: 10px;
+    }
+}
+/* FORM ERROR GRACIAS*/
+
+.invisible {
+    display: none;
+}
+.contact_divP {
+    max-width: 500px;
+    @include breakpoint(xxs) {
+        max-width: 80%;
+        margin: 0;
+    }
+}
+.contact_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 30px 0 30px;
+
+    @include breakpoint(xxs) {
+        font-size: 1.5rem;
+        margin: 0 15px 0 15px;
+    }
+}
+.contact_paragraph {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 30px 0 30px;
+
+    @include breakpoint(xxs) {
+        font-size: 0.7rem;
+        margin: 0 15px 0 15px;
+    }
+}
+.contact_form {
+    display: flex;
+    justify-content: center;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include breakpoint(xxs) {
+        max-width: 70%;
+    }
+}
+label {
+    margin: 10px 15px;
+    font-weight: 400;
+    @include breakpoint(xxs) {
+        margin: 0 5px 0 5px;
+    }
+}
+input {
+    border: none;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    max-width: 450px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    white-space: normal;
+    margin: 0 15px 10px 15px;
+    @include breakpoint(xxs) {
+        margin: 0 5px 5px 5px;
+    }
+}
+
+#message {
+    
+    height: 180px;
+    margin: 10px 15px 10px 15px;
+    max-width: 450px;
+    @include breakpoint(xxs) {
+        margin: 10px 5px 10px 5px;
+        height: 150px;
+        padding: 0 2px;
+    }
+}
+
+.button_submit {
+    letter-spacing: 1px;
+    background-color: #7774ec;
+    font-weight: 500;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 55%;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+
+    @media (min-width: 1440px) {
+        //margin-right: 350px;
+    }
+    @include breakpoint(md) {
+        margin-right: 220px;
+    }
+    @include breakpoint(sm) {
+        margin-right: 30px;
+    }
     @include breakpoint(xxs) {
         margin-right: 10px;
     }
