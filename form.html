@@ -2,45 +2,199 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="icon" type="im" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>Sein</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="im" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
+    <link rel="manifest" href="your-path/site.webmanifest" crossorigin="use-credentials">
+    <title>Sein</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   
+        <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
-  <section class="form_contact">
-    <div class="container contact_divP">
-      <p class="contact_title">Contact </p>
-      <p class="contact_paragraph">Contact us to build a tech product together, to work with us or just to have a chat.
-      </p>
+
+-->
+
+<!--NAV -->
+<nav class="nav">
+    <a class="navbar-brand" href="."><img src="./assets/logo sein.svg">
+    </a>
+    <div class="hamburger">
+        <div class="_layer -top"></div>
+        <div class="_layer -mid"></div>
+        <div class="_layer -bottom"></div>
     </div>
-    <div class="contact_form">
-      <p class="invisible" id="form_error"> todos los campos son requeridos </p>
+
+
+    <div class="menuppal">
+        <div class="navbar_logo">
+            <img class="navbar_img" src="./assets/logo sein.svg">
+        </div>
+
+        <div class="menuppal_right">
+            <p class="menuppal_text"> get </p>
+            <img class="menuppal_img"src="/assets/logo sein.svg">
+        </div>
+            <div class="menuppal_left">
+                <p class="menuppal_subtext" id="menuppal_link"> Services <br>
+                    Emerging Technologies
+                </p>    
+
+                <h4 class="menuppal_textLeft"><b> Let’s build something great together </b></h4>
+
+                <p class="menuppal_textTwo">We want to work with organizations and <br>entrepreneurs, seeking technology growth and <br> influencing innovation.</p>
+            
+                <button type="button" class="button_card_content" onclick="window.location.href='/form.html'">
+                    Contact us</button>
+    
+            </div>
+      
+
     </div>
-    <div id="form" class="container">
-      <label for="name"> My Name is</label>
-      <input type="text" id="name" name="name">
-      <label for="email"> My Email is</label>
-      <input type="text" id="email" name="email">
-      <label for="message">Message</label><br>
-      <textarea id="message" name="message"></textarea>
+
+</nav>
+
+
+    <!---FORM -->
+
+    <section id="foco_section_form" >
+        <div class="foco_form"> 
+        <div id="foco_form2" class="container">
+
+            <div class="form_contact">
+
+                <div class="container contact_divP">
+                    <div class="contact_one"> 
+                        <img class="contact_img" src="assets/Rectángulo 3286.svg">
+                    <p class="contact_title">  Contact   </p> 
+                    <img class="form_img" src="assets/flecha contacto.svg">
+
+                </div>
+                    <h3 class="contact_paragraph"> Let’s build something great together
+                    </h3>
+                    <h4 class="contact_tree"> We want to work with organizations and entrepreneurs, <br>seeking technology growth and influencing innovation. </h4>
+
+                </div>
+
+                <form id="form" class="container">
+                    <div class="row">
+                    <div class="form-group col-md-6">
+                        <p class="form_p">Name *</p>
+                        <input type="text" class="form-control" placeholder="Enter your Name" ng-model="person.name" name="name" required="required" />
+                      </div>
+            
+                      <div class="form-group col-md-6">
+                        <p class="form_p">Last Name *</p>
+                        <input type="text" class="form-control" placeholder="Enter your Last Name" ng-model="person.lastname" name="last" required="required"/>
+                      </div>
+            
+                      <div class="form-group col-md-6">
+                        <p class="form_p">Email *</p>
+                        <input type="text" class="form-control" placeholder="Enter your Email" ng-model="Email"  name="email" required="required"/>
+                      </div>
+
+
+                      <div class="form-group col-md-6">
+                        <p class="form_p">Organization</p>
+                        <input type="text" class="form-control" placeholder="Enter your Organization" ng-model="organization"  name="organization" required="required"  />
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <p class="form_p">How can we help you? Leave us your query</p>
+                        <input id="message" type="text" placeholder="Leave us your message" name="message">    
+                       </div>
+
+                    </div>
+
+                    <div class="button_div container" id="input-Id"> 
+                        <input type="submit" id="button" value="Send" class="button_submit" >
+                    </div>
+                </form>
+            </div>
+            <img class="img_form" src="/assets/BARRA CONTACTO.png">
+        </div>
     </div>
-    <div class="button_div container">
-      <button class="button_submit" id="sendBtn">send</button>
-    </div>
-  </section>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LdUv9AdAAAAABFY2Cq-42JbyofqFRaNUp_y87bC"></script>
-  <script src="./js/form.js"></script>
+    </section>
+
+
+
+
+    <!--Footer -->
+    <footer class="footer">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col">
+                    <div class="submenu_footer">
+                        <img src="assets/Grupo 6511.svg" class="submenu__titulo">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="submenu_footer">
+                        <h4 class="submenu_h4">SEIN.COM</h4>
+                        <ul>
+                            <li><a href="https://getsein.com/" class="submenu__link">Emerging Technologies</a></li>
+                            <li><a href="https://getsein.com/" class="submenu__link">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="submenu_footer">
+                        <h4 class="submenu_h4">CONTACT</h4>
+                        <ul>
+                            <a href="https://getsein.com/" class="submenu__link"> 
+                             <img class="img_footer" src="/assets/Icon Ig.svg"></a>
+                            <a href="https://getsein.com/" class="submenu__link">
+                             <img class="img_footer" src="/assets/Icon Fb.svg"></a>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+               
+
+                <div class="row subfooter">
+                    <div class="lineaGradiente"> </div>
+                    <div class="subfooter__end">
+                        © 2021 Sein, todos los derechos reservados
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('jP1SihhZhxoqNGkJ6')
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdUv9AdAAAAABFY2Cq-42JbyofqFRaNUp_y87bC"></script>
+    <script src="https://kit.fontawesome.com/e6eec834c7.js" crossorigin="anonymous"></script>
+
+    <script src="https://example.com/fontawesome/v6.2.0/js/all.js" data-auto-a11y="true"></script>
+
+
+    <script src="./js/sein.js"></script>
+    <script src="../js/form.js"></script>
+
+
 </body>
 
 </html>
