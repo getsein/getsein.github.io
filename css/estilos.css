@@ -1032,7 +1032,7 @@
 
 
 
-  /*Contacy */
+  /*Contact */
 
 
   .section_let {
@@ -1259,12 +1259,15 @@
     list-style: none;
   }
 
+
   .submenu_footer a {
     color: #f7f7ff;
     text-decoration: none;
 
   }
 
+
+  
   .submenu_footer li {
     margin-top: 10px;
     letter-spacing: 0.24px;
@@ -1273,7 +1276,11 @@
     display: table;
   }
 
-
+  @media (max-width: 575px) {
+    .submenu_footer li {
+      font-size: 10px;
+    }
+  }
 
   .submenu_footer li ::after {
     content: "";
@@ -1301,14 +1308,31 @@
     height: 76px;
   }
 
+  @media (max-width: 575px) {
+    .submenu__titulo {
+      width: 70px;
+    }
+  }
+
+
   .submenu_h4 {
     font-size: 14px;
     color: #f7f7ff;
   }
 
+
+
   .img_footer {
     padding: 3px;
   }
+  @media (max-width: 575px) {
+    .img_footer {
+      width: 22px;
+    }
+  }
+
+
+
 
   .lineaGradiente {
     width: 100%;
@@ -1319,6 +1343,13 @@
     animation: lineaGradienteAnimation 20s linear infinite;
 
   }
+  @media (max-width: 575px) {
+    .lineaGradiente {
+     margin-left:15px;
+
+    }
+  }
+
 
   .subfooter__end {
     letter-spacing: 0.46px;
