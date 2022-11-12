@@ -172,14 +172,39 @@
     margin-left: 140px;
   }
 
+  @media (max-width: 1200px) {
+    .navbar_img {
+      margin-left:20px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .navbar_img {
+      margin-left:20px
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar_img {
+      margin-left:20px
+    }
+  }
+
+  @media (max-width: 575px) {
+    .navbar_img {
+      margin-left: 20px;
+    }
+  }
+
+
   .submenu {
-    display:flex;
-  } 
+    display: flex;
+  }
 
   @media (max-width: 575px) {
     .submenu {
-     display:block;
-  
+      display: block;
+
     }
   }
 
@@ -215,7 +240,7 @@
   @media (max-width: 575px) {
     .menuppal_right {
       margin-top: 105px;
-      margin-left: 10px;
+      margin-left: -130px;
     }
   }
 
@@ -303,22 +328,29 @@
   @media (max-width: 575px) {
     .menuppal_left {
 
-    margin-top: 103px;
-    margin-left: 154px;
-    height: 89px;
-    width: 608px;
+      margin-top: 60px;
+      margin-left: -90px;
+      height: 89px;
+      width: 608px;
     }
   }
 
 
 
   .menuppal_subtext {
-
     letter-spacing: 1.44px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     display: table;
   }
+
+  @media (max-width: 575px) {
+    .menuppal_subtext {
+      font-size:20px ;
+      width: 300px;
+    }
+  }
+
 
   .menuppal_subtext::after {
     content: "";
@@ -352,6 +384,13 @@
     opacity: 1;
   }
 
+  @media (max-width: 575px) {
+    .menuppal_textLeft {
+      width: 250px;
+      font-size:20px ;
+    }
+  }
+
   .menuppal_textTwo {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/32px var(--unnamed-font-family-montserrat-regular);
     letter-spacing: var(--unnamed-character-spacing-0);
@@ -365,7 +404,12 @@
     opacity: 0.71;
   }
 
-
+  @media (max-width: 575px) {
+    .menuppal_textTwo {
+      font-size:18px ;
+      width: 230px;
+    }
+  }
 
   .button_card_content {
     background-color: #7774ec;
@@ -387,35 +431,19 @@
     color: white;
   }
 
-  .menuppal ul {
-    margin: 0;
-    padding: 0;
-  }
 
-  .menuppal ul li {
-    list-style: none;
-    text-align: center;
-    font-family: Arial, Helvetica;
-    color: #33C5B6;
-    font-size: 1.5rem;
-    line-height: 3em;
-    height: 3em;
-    color: #369;
-    text-transform: none;
-    font-weight: bold;
-  }
-
-  .menuppal ul li a {
-    text-decoration: none;
-    color: #369;
-  }
-
-  .menuppal ul li a:hover {
-    text-decoration: none;
-    color: #333;
+  @media (max-width: 575px) {
+    .button_card_content {
+      height: 41px;
+      width:120px;
+      font-size: 15px;
+    }
   }
 
 
+
+ 
+ 
 
 
   /* Top section Desing  */
@@ -562,7 +590,7 @@
 
   @media (max-width: 575px) {
     .Tec {
-      width: 270px;
+      width: 275px !important;
       left: -20px;
     }
   }
@@ -648,7 +676,7 @@
   @media (max-width: 575px) {
     .foco_section {
       padding: 60px 0 40px 0;
-      width: 575px;
+      width: 375px;
       height: 400px;
     }
   }
@@ -1026,7 +1054,6 @@
   @media (max-width: 767px) {
     .emerging-technologies {
       padding: 100px 0 20px;
-      width: 767px;
     }
   }
 
@@ -1034,6 +1061,7 @@
     .emerging-technologies {
       padding: 100px 0 20px;
       margin-top: 3px;
+
     }
   }
 
@@ -1069,6 +1097,7 @@
     .let_img {
       width: 338px;
       height: 105px;
+      MARGIN-LEFT: 1PX;
     }
   }
 
