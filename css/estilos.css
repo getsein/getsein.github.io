@@ -1380,8 +1380,16 @@
     padding: 80px 0 130px 0;
     width: 100%;
     height: 826px;
-
   }
+
+  @media (max-width: 575px) {
+    .foco_form {
+     height:30px;
+
+    }
+  }
+
+
 
   #foco_form2 {
     height: 1039px;
@@ -1391,13 +1399,21 @@
 
   .form_contact {
     background-color: #ffff;
-    /* margin-left: -48px;
-    margin-top: 510px;*/
     box-shadow: 6px 6px 12px #00000029;
     margin-top: 330px;
     margin-left: 140px;
     width: 788px;
     height: 1239px;
+  }
+
+    @media (max-width: 575px) {
+    .form_contact {
+     margin-top:30px;
+     margin-left: 5px;
+     width:270px;
+     height:1000px;
+
+    }
   }
 
   .invisible {
@@ -1407,8 +1423,6 @@
   .contact_one {
     display: flex;
   }
-
-
 
 
   @media (max-width: 575px) {
@@ -1431,8 +1445,8 @@
 
   @media (max-width: 575px) {
     .contact_title {
-      font-size: 1.5rem;
-      margin: 0 15px 0 15px;
+      font-size: 50px;
+      margin-left: -190px;
     }
   }
 
@@ -1443,14 +1457,29 @@
     margin-top: 130px;
   }
 
+  @media (max-width: 575px) {
+    .contact_img {
+      width: 90px;
+      height: 15px;
+      margin-left: "";
+      margin-top: 60px;
+    }
+  }
+
+
   .form_img {
     width: 145px;
     height: 180px;
     opacity: 1;
     margin-left: 5px;
-
-
   }
+  @media (max-width: 575px) {
+    .form_img {
+      height: 80px;
+    }
+  }
+
+
 
   .img_contact {
     height: 43px;
@@ -1469,7 +1498,8 @@
   @media (max-width: 575px) {
     .contact_paragraph {
       font-size: 0.7rem;
-      margin: 0 15px 0 15px;
+      margin: 10px 15px 0 15px;
+      
     }
   }
 
@@ -1483,6 +1513,14 @@
     opacity: 0.71;
     padding: 10px;
     margin-left: -50px
+  }
+
+  @media (max-width: 575px) {
+    .contact_tree {
+      font-size: 14px;
+      margin-left:10px;
+      margin-top:10px;
+    }
   }
 
   .contact_form {
@@ -1502,6 +1540,7 @@
   @media (max-width: 575px) {
     #form {
       max-width: 70%;
+      margin-top:1px;
     }
   }
 
@@ -1543,6 +1582,13 @@
     height: 34px;
   }
 
+  
+  @media (max-width: 575px) {
+    .form-control {
+      width:200px;
+    }
+  }
+
   .form_p {
     margin-top: 10px;
     margin-left: -30px;
@@ -1569,6 +1615,7 @@
       margin: 10px 5px 10px 5px;
       height: 150px;
       padding: 0 2px;
+      width:200px;
     }
   }
 
@@ -1614,7 +1661,9 @@
 
   @media (max-width: 575px) {
     .button_submit {
-      margin-right: 10px;
+      margin-left: -200px;
+      width:100px;
+      height:60px;
     }
   }
 
@@ -1624,8 +1673,16 @@
     width: 790px;
     margin-left: 140px;
     opacity: 1;
-
   }
 
+  @media (max-width: 575px) {
+    .img_form {
+      margin-bottom: 10px;
+    height: 15px;
+    width: 280px;
+    margin-left: 1px;
+    
+    }
+  }
 
   /*# sourceMappingURL=estilos.css.map */
