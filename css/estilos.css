@@ -28,7 +28,7 @@
     font-size: 1.25rem;
     text-decoration: none;
     white-space: nowrap;
-    margin-left: 90px;
+    margin-left: 120px;
     width: 91px;
     margin-top: 8px;
   }
@@ -44,10 +44,8 @@
     background-color: transparent;
     left: 0;
     top: 0;
-    height: 30px;
-    margin-top: -50px;
     width: 40px;
-    margin-left: 1248px;
+    margin-left: 950px;
     width: 36px;
     height: 36px;
     padding: 20px 20px;
@@ -65,8 +63,8 @@
 
   @media (max-width: 1200px) {
     .hamburger {
-
-      margin-left: 900px;
+      margin-top:-40px;
+      margin-left: 1000px;
     }
   }
 
@@ -461,10 +459,10 @@
   }
 
   #top_section p {
-    font-size: 154px;
+    font-size:  7.5rem;
     font-weight: 300;
     line-height: 1.4;
-    margin-bottom: 5px;
+    margin-bottom: -45px;
     left: 238px;
   }
 
@@ -498,10 +496,10 @@
   }
 
   .containerUno {
-    margin-bottom: 172px;
-    margin-left: 235px;
+    margin-bottom: 90px;
+    margin-left: 195px;
     width: 854px;
-    height: 574px;
+  
   }
 
   @media (max-width: 991px) {
@@ -543,6 +541,7 @@
     width: 30px;
     height: 188px;
 
+
   }
 
   .topDos {
@@ -550,8 +549,8 @@
     position: relative;
     z-index: -1;
     /* top: 32px;*/
-    bottom: -170px;
-    width: 150px;
+    bottom: -130px;
+    width: 120px;
     height: 20px;
     opacity: 0.5;
     border-radius: 1px;
@@ -577,8 +576,8 @@
 
 
   .Tec {
-    width: 900px;
-    left: -5px;
+    width: 640px;
+    left: -4px;
   }
 
   @media (max-width: 991px) {
@@ -597,8 +596,8 @@
 
 
   .Inn {
-    width: 800px;
-    left: -25px;
+    width: 620px;
+    left: -20px;
   }
 
   @media (max-width: 1024px) {
@@ -623,8 +622,8 @@
   }
 
   .Design {
-    width: 530px;
-    left: -29px;
+    width: 410px;
+    left: -20px;
   }
 
   @media (max-width: 991px) {
@@ -648,9 +647,8 @@
   .foco_section {
     background-image: url(../assets/S-Banner\ nuevo\ irreal@2x.png);
     background-size: cover;
-    padding: 80px 0 130px 0;
-    height: 840px;
-
+    padding: 100px 0 180px 0;
+    width:100%;
   }
 
   @media (min-width: 1450px) {
@@ -682,7 +680,7 @@
   }
 
   #foco_container {
-    margin-top: 250px;
+    margin-top: 170px;
   }
 
   @media (max-width: 768px) {
@@ -706,15 +704,18 @@
   }
 
   .foco_section p {
-    font-size: 75px;
-    margin-left: 140px;
+    font-size: 61px;
+    margin-left: 5px;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
     font-family: 'Shadows Into Light', cursive;
+    height: 90px;
   }
 
   .foco_p2 {
+    margin-top:10px;
+    font-size: 51px !important;
     font-family: "Montserrat-Light" !important;
   }
 
@@ -818,6 +819,10 @@
   .second_cards .carousel-control-next,
   .second_cards_mobile .carousel-control-next {
     color: #9c9a9a;
+  }
+
+  .d-lg-block{
+    margin-top:-100px;
   }
 
 
@@ -1080,9 +1085,9 @@
   }
 
   .let_img {
-    width: 438px;
-    height: 421px;
-    margin-left: 13%;
+    width: 380px;
+    height: 300px;
+    margin-left: 10%;
     opacity: 1;
   }
 
@@ -1125,7 +1130,7 @@
 
   .let_h2 {
     color: #000;
-    font-size: 64px;
+    font-size: 40px;
     text-align: left;
     font-family: 'Montserrat';
     opacity: 1;
@@ -1144,12 +1149,13 @@
   }
 
   .let_h4 {
-    width: 649px;
+    width: 549px;
     height: 89px;
     margin-top: 35px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     opacity: 71%;
+    color: #1f1f23;
   }
 
 
@@ -1168,15 +1174,15 @@
   }
 
   .card_content_btn {
-    background-color: #7774ec;
+    background-color: #7774ECCC;
     font-weight: 500;
-    height: 71px;
+    height: 61px;
     color: white;
-    margin-top: 15px;
+    margin-top: 35px;
     border: none;
     border-radius: 10px;
-    width: 315px;
-    font-size: 30px;
+    width: 200px;
+    font-size: 25px;
     text-decoration: none;
     text-align: center;
     opacity: 1;
@@ -1244,13 +1250,12 @@
   .col {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     align-items: center;
 
   }
 
   .submenu_footer {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 
   .submenu_footer ul {
@@ -1304,8 +1309,8 @@
   }
 
   .submenu__titulo {
-    width: 170px;
-    height: 76px;
+    width: 140px;
+    height: 70px;
   }
 
   @media (max-width: 575px) {
