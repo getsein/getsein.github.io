@@ -22,16 +22,37 @@
 
   }
 
+  @media (min-width: 1500px) {
+    .nav {
+      max-width: 1320px;
+      margin-left: 400px;
+    }
+  }
+
+  .navbar {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .sticky-top {
+    position: webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
   .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     font-size: 1.25rem;
     text-decoration: none;
     white-space: nowrap;
-    margin-left: 120px;
     width: 91px;
-    margin-top: 8px;
   }
+
+
+
 
   @media (max-width: 575px) {
     .navbar-brand {
@@ -39,14 +60,49 @@
     }
   }
 
+  .container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+
+  @media (min-width: 1200px) {}
+
+  .container {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      min-width: 960px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      min-width: 720px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      min-width: 540px;
+    }
+  }
 
   .hamburger {
     background-color: transparent;
     left: 0;
     top: 0;
     width: 40px;
-    margin-left: 950px;
-    width: 36px;
     height: 36px;
     padding: 20px 20px;
     -webkit-transform: translate3d(0, 0, 0);
@@ -60,6 +116,15 @@
     -ms-user-select: none;
     user-select: none
   }
+
+  /*
+  @media (min-width: 1700px){
+    .hamburger {
+      margin-top:-30px;
+      margin-left: 1600px;
+    }
+  }
+  
 
   @media (max-width: 1200px) {
     .hamburger {
@@ -87,7 +152,7 @@
       margin-left: 150px;
     }
   }
-
+*/
   .hamburger.is-active {
     background-color: none;
 
@@ -172,19 +237,19 @@
 
   @media (max-width: 1200px) {
     .navbar_img {
-      margin-left:20px;
+      margin-left: 20px;
     }
   }
 
   @media (max-width: 991px) {
     .navbar_img {
-      margin-left:20px
+      margin-left: 20px
     }
   }
 
   @media (max-width: 767px) {
     .navbar_img {
-      margin-left:20px
+      margin-left: 20px
     }
   }
 
@@ -319,8 +384,7 @@
   .menuppal_left {
     margin-top: 103px;
     margin-left: 154px;
-    height: 89px;
-    width: 608px;
+
   }
 
   @media (max-width: 575px) {
@@ -340,11 +404,12 @@
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     display: table;
+    padding: 15px;
   }
 
   @media (max-width: 575px) {
     .menuppal_subtext {
-      font-size:20px ;
+      font-size: 20px;
       width: 300px;
     }
   }
@@ -385,7 +450,7 @@
   @media (max-width: 575px) {
     .menuppal_textLeft {
       width: 250px;
-      font-size:20px ;
+      font-size: 20px;
     }
   }
 
@@ -396,7 +461,7 @@
     text-align: left;
     font: normal;
     font-size: 22px;
-    font-family: 'montserrat-Regular';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0px;
     color: #1F1F23;
     opacity: 0.71;
@@ -404,7 +469,7 @@
 
   @media (max-width: 575px) {
     .menuppal_textTwo {
-      font-size:18px ;
+      font-size: 18px;
       width: 230px;
     }
   }
@@ -433,15 +498,15 @@
   @media (max-width: 575px) {
     .button_card_content {
       height: 41px;
-      width:120px;
+      width: 120px;
       font-size: 15px;
     }
   }
 
 
 
- 
- 
+
+
 
 
   /* Top section Desing  */
@@ -459,7 +524,7 @@
   }
 
   #top_section p {
-    font-size:  7.5rem;
+    font-size: 7.5rem;
     font-weight: 300;
     line-height: 1.4;
     margin-bottom: -45px;
@@ -499,7 +564,16 @@
     margin-bottom: 90px;
     margin-left: 195px;
     width: 854px;
-  
+
+  }
+
+  @media (min-width: 1800px) {
+    .containerUno {
+      margin-bottom: 172px;
+      margin-left: 550px;
+      width: 854px;
+      height: 450px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -648,7 +722,7 @@
     background-image: url(../assets/S-Banner\ nuevo\ irreal@2x.png);
     background-size: cover;
     padding: 100px 0 180px 0;
-    width:100%;
+    width: 100%;
   }
 
   @media (min-width: 1450px) {
@@ -681,12 +755,15 @@
 
   #foco_container {
     margin-top: 170px;
+    display: flex;
+    flex-direction: column
   }
 
   @media (max-width: 768px) {
     #foco_container {
       margin-top: 150px;
       margin-left: 10px;
+
     }
   }
 
@@ -704,17 +781,16 @@
   }
 
   .foco_section p {
-    font-size: 61px;
-    margin-left: 5px;
+    font-size: 71px;
+    margin-left: -600px;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
     font-family: 'Shadows Into Light', cursive;
-    height: 90px;
+
   }
 
   .foco_p2 {
-    margin-top:10px;
     font-size: 51px !important;
     font-family: "Montserrat-Light" !important;
   }
@@ -821,8 +897,8 @@
     color: #9c9a9a;
   }
 
-  .d-lg-block{
-    margin-top:-100px;
+  .d-lg-block {
+    margin-top: -60px;
   }
 
 
@@ -1050,7 +1126,6 @@
   }
 
   .emerging-technologies {
-    margin-bottom: 10px;
     position: relative;
     padding: 100px 0 50px;
     background: #E3E9FB;
@@ -1081,8 +1156,15 @@
 
   .let {
     display: flex;
-
   }
+
+  @media (max-width: 2560px) {
+    .let {
+      justify-content: center;
+      ;
+    }
+  }
+
 
   .let_img {
     width: 380px;
@@ -1114,6 +1196,12 @@
     margin-left: 50px;
     width: 818px;
     height: 122px;
+  }
+
+  @media (max-width: 2560px) {
+    .let_dos {
+      height: 2px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -1242,9 +1330,8 @@
 
   .row {
     display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: -10px;
+    margin-left: 45px;
+
   }
 
   .col {
@@ -1272,7 +1359,7 @@
   }
 
 
-  
+
   .submenu_footer li {
     margin-top: 10px;
     letter-spacing: 0.24px;
@@ -1330,6 +1417,7 @@
   .img_footer {
     padding: 3px;
   }
+
   @media (max-width: 575px) {
     .img_footer {
       width: 22px;
@@ -1348,9 +1436,10 @@
     animation: lineaGradienteAnimation 20s linear infinite;
 
   }
+
   @media (max-width: 575px) {
     .lineaGradiente {
-     margin-left:15px;
+      margin-left: 15px;
 
     }
   }
@@ -1389,7 +1478,7 @@
 
   @media (max-width: 575px) {
     .foco_form {
-     height:30px;
+      height: 30px;
 
     }
   }
@@ -1398,7 +1487,8 @@
 
   #foco_form2 {
     height: 1039px;
-    width: 1000px;
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -1406,17 +1496,16 @@
     background-color: #ffff;
     box-shadow: 6px 6px 12px #00000029;
     margin-top: 330px;
-    margin-left: 140px;
     width: 788px;
-    height: 1239px;
+    height: 1100px;
   }
 
-    @media (max-width: 575px) {
+  @media (max-width: 575px) {
     .form_contact {
-     margin-top:30px;
-     margin-left: 5px;
-     width:270px;
-     height:1000px;
+      margin-top: 30px;
+      margin-left: 5px;
+      width: 270px;
+      height: 1000px;
 
     }
   }
@@ -1427,6 +1516,8 @@
 
   .contact_one {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -1443,8 +1534,7 @@
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
     letter-spacing: 2px;
-    margin-left: -500px;
-    text-underline-offset: -5px;
+    margin-left: -505px;
   }
 
 
@@ -1459,7 +1549,7 @@
     width: 514px;
     height: 43px;
     margin-left: 130px;
-    margin-top: 130px;
+
   }
 
   @media (max-width: 575px) {
@@ -1477,7 +1567,9 @@
     height: 180px;
     opacity: 1;
     margin-left: 5px;
+    margin-bottom: 130px
   }
+
   @media (max-width: 575px) {
     .form_img {
       height: 80px;
@@ -1492,39 +1584,39 @@
   }
 
   .contact_paragraph {
-    font-size: 24px;
+    font-size: 23px;
     font-family: 'montserrat';
     text-align: center;
     letter-spacing: 1px;
     color: #1f1f23;
-    margin-left: -20px;
+
   }
 
   @media (max-width: 575px) {
     .contact_paragraph {
       font-size: 0.7rem;
       margin: 10px 15px 0 15px;
-      
+
     }
   }
 
   .contact_tree {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    font-family: 'Montserrat-ExtraLight';
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     letter-spacing: 1px;
     color: #1F1F23;
     opacity: 0.71;
     padding: 10px;
-    margin-left: -50px
+    margin-left: 20px
   }
 
   @media (max-width: 575px) {
     .contact_tree {
       font-size: 14px;
-      margin-left:10px;
-      margin-top:10px;
+      margin-left: 10px;
+      margin-top: 10px;
     }
   }
 
@@ -1539,13 +1631,13 @@
     width: 100%;
     max-width: 545px;
     margin-top: 70px;
-    margin-bottom: 40px;
+
   }
 
   @media (max-width: 575px) {
     #form {
       max-width: 70%;
-      margin-top:1px;
+      margin-top: 1px;
     }
   }
 
@@ -1587,10 +1679,10 @@
     height: 34px;
   }
 
-  
+
   @media (max-width: 575px) {
     .form-control {
-      width:200px;
+      width: 200px;
     }
   }
 
@@ -1620,7 +1712,7 @@
       margin: 10px 5px 10px 5px;
       height: 150px;
       padding: 0 2px;
-      width:200px;
+      width: 200px;
     }
   }
 
@@ -1638,7 +1730,7 @@
     position: absolute;
     left: 60%;
     height: 61px;
-    margin-top: 125px;
+    margin-top: 250px;
     width: 205px;
     font-size: 24px;
     background: #7774EC 0% 0% no-repeat padding-box;
@@ -1667,27 +1759,10 @@
   @media (max-width: 575px) {
     .button_submit {
       margin-left: -200px;
-      width:100px;
-      height:60px;
+      width: 100px;
+      height: 60px;
     }
   }
 
-  .img_form {
-    margin-bottom: 10px;
-    height: 15px;
-    width: 790px;
-    margin-left: 140px;
-    opacity: 1;
-  }
-
-  @media (max-width: 575px) {
-    .img_form {
-      margin-bottom: 10px;
-    height: 15px;
-    width: 280px;
-    margin-left: 1px;
-    
-    }
-  }
 
   /*# sourceMappingURL=estilos.css.map */
