@@ -177,12 +177,13 @@
     transform: translateY(0%);
   }
 
+  /*
   .hamburger:hover .-bottom {
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(100%);
     transform: translateY(100%);
   }
-
+*/
   .hamburger.is-active .-top {
     -webkit-transform: translateY(200%) rotate(45deg) !important;
     -ms-transform: translateY(200%) rotate(45deg) !important;
@@ -382,7 +383,7 @@
 
 
   .menuppal_left {
-    margin-top: 103px;
+    margin-top: 143px;
     margin-left: 154px;
 
   }
@@ -401,10 +402,9 @@
 
   .menuppal_subtext {
     letter-spacing: 1.44px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     display: table;
-    padding: 15px;
   }
 
   @media (max-width: 575px) {
@@ -414,11 +414,10 @@
     }
   }
 
-
+/*
   .menuppal_subtext::after {
     content: "";
     display: block;
-    height: 8px;
     background-color: #7774ECCC;
     transform: scale(0, 1);
     transform-origin: center;
@@ -426,15 +425,39 @@
     margin-bottom: -30px;
 
   }
-
+*/
   #menuppal_link:hover::after {
     transform: scale(1, 1);
   }
 
-.dropdown-item{
-  list-style: none;
-  text-decoration: none;
-}
+.menuppal_submenu{
+   display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  .menuppal_submenu a :hover{
+ color: #212529;
+  }
+
+  .menuppal_submenu a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+
 
   .menuppal_textLeft {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-montserrat);
@@ -442,7 +465,7 @@
     color: var(--unnamed-color-1f1f23);
     text-align: left;
     font: normal normal normal;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'montserrat';
     letter-spacing: 0px;
     margin-top: 90px;
@@ -463,11 +486,11 @@
     color: var(--unnamed-color-1f1f23);
     text-align: left;
     font: normal;
-    font-size: 22px;
+    font-size: 19px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0px;
     color: #1F1F23;
-    opacity: 0.71;
+    opacity: 0.90;
   }
 
   @media (max-width: 575px) {
@@ -480,13 +503,13 @@
   .button_card_content {
     background-color: #7774ec;
     font-weight: 500;
-    height: 61px;
+    height: 51px;
     margin-top: 15px;
     color: white;
     border: none;
     border-radius: 10px;
-    width: 272px;
-    font-size: 30px;
+    width: 250px;
+    font-size: 25px;
     text-decoration: none;
     text-align: center;
     opacity: 1;
