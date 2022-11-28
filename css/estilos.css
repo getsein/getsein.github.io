@@ -414,7 +414,7 @@
     }
   }
 
-/*
+  /*
   .menuppal_subtext::after {
     content: "";
     display: block;
@@ -425,11 +425,10 @@
     margin-bottom: -30px;
 
   }
-*/
   #menuppal_link:hover::after {
     transform: scale(1, 1);
   }
-
+/*
 .menuppal_submenu{
    display: block;
     width: 100%;
@@ -457,6 +456,28 @@
     text-decoration: none;
   }
 
+
+*/
+
+  .menuppal_submenu {
+    text-decoration: none;
+    top: 230px;
+    left: 854px;
+    width: 108px;
+    height: 29px;
+    /* UI Properties */
+    text-align: left;
+    font-size:  24px;
+    letter-spacing: 1.44px;
+    color: #35373B;
+    font-family: 'montserrat';
+    opacity: 1;
+  }
+
+  .menuppal_submenu:hover {
+    text-decoration: underline;
+  
+  }
 
 
   .menuppal_textLeft {
