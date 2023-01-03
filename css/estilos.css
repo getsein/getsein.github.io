@@ -324,21 +324,21 @@
   @media (max-width: 1200px) {
     .menuppal_text {
       margin-left: 10px;
-      font-size: 50px;
+    
     }
   }
 
   @media (max-width: 991px) {
     .menuppal_text {
       margin-left: 10px;
-      font-size: 50px;
+      font-size: 120px;
     }
   }
 
   @media (max-width: 767px) {
     .menuppal_text {
       margin-left: 10px;
-      font-size: 50px;
+      font-size: 120px;
     }
   }
 
@@ -622,7 +622,7 @@
 
   .containerUno {
     margin-bottom: 90px;
-    margin-left: 120px;
+    margin-left: 170px;
     width: 854px;
 
   }
@@ -1790,7 +1790,7 @@
     position: absolute;
     left: 60%;
     height: 61px;
-    margin-top: 250px;
+    margin-top: 180px;
     width: 205px;
     font-size: 24px;
     background: #7774EC 0% 0% no-repeat padding-box;
