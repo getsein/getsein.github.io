@@ -74,11 +74,7 @@
     }
   }
 
-  @media (min-width: 1200px) {}
-
-  .container {
-    max-width: 1140px;
-  }
+ 
 
   @media (min-width: 992px) {
     .container {
@@ -565,6 +561,7 @@
     margin: 40px 0px;
     display: flex;
     align-items: center;
+    height: 100vh;
   }
 
   @media (max-width: 991px) {
@@ -611,8 +608,8 @@
   }
 
   .containerUno {
-    margin-bottom: 90px;
-    margin-left: 195px;
+    margin-bottom: 110px;
+    margin-left: 170px;
     width: 854px;
 
   }
@@ -629,7 +626,7 @@
   @media (max-width: 991px) {
     .containerUno {
       margin-bottom: 172px;
-      margin-left: 30px;
+      margin-left: 80px;
       width: 854px;
       height: 450px;
     }
@@ -726,7 +723,7 @@
 
   @media (max-width: 1024px) {
     .Tec {
-      width: 490px;
+      width: 600px;
       left: -25px;
     }
   }
