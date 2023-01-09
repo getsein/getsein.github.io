@@ -19,6 +19,7 @@
   /*NAV*/
   .nav {
     margin-bottom: 25px;
+    padding-top: 0.5rem;
 
   }
 
@@ -156,11 +157,11 @@
 
   ._layer {
     background: #333333;
-    margin-bottom: 4px;
     border-radius: 2px;
-    width: 28px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     opacity: 1;
+    margin-bottom:5px;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
@@ -608,9 +609,11 @@
   }
 
   .containerUno {
-    margin-bottom: 110px;
-    margin-left: 170px;
+    margin-bottom: 105px;
+    margin-left: 150px;
     width: 854px;
+    font-weight: 300; 
+    font-size: 7rem;
 
   }
 
@@ -983,7 +986,7 @@
   @media (max-width: 768px) {
     .second_cards .carousel-control-next,
      .second_cards_mobile .carousel-control-next  {
-       margin-right: 100px;
+       margin-right: 60px;
  
      }
    }
