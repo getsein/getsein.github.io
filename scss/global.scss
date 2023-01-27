@@ -12,7 +12,12 @@
     background-color: white;
     position: -webkit-sticky;
     position: sticky;
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
+    padding: 10px 40px;
+ 
 }
+
+
 .hamburguer {
     background-color: white;
     width: 30px;
@@ -20,7 +25,7 @@
 
     &__bar {
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: black;
         margin-bottom: 5px;
 
@@ -62,34 +67,35 @@
 
 #top_section {
     height: 100vh;
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
     align-items: center;
     @include breakpoint(sm) {
         height: 100%;
     }
     p {
-        font-size: 7.5rem;
-        font-weight: 300;
+        font-size: 140px;
+        margin-left: 90px;
         line-height: 1.4;
+        font-weight: 300;
         margin-bottom: 5px;
-        margin-left: 50px;
-        @include breakpoint(md) {
-            font-size: 7rem;
+         @include breakpoint(lg) {
+            font-size: 120px; 
         }
-        @include breakpoint(sm) {
-            font-size: 80px;
-            font-weight: 400;
+        @include breakpoint(md) {
+            font-size: 110px;
         }
         @include breakpoint(xs) {
-            font-size: 60px;
+            font-size: 80px;
+            margin-left: 30px;
         }
+       
         @include breakpoint(xxs) {
-            font-size: 50px;
+            font-size: 60px;
             margin-bottom: 5px;
             font-weight: 400;
             line-height: 2;
-            margin-left: 0px;
+            margin-left: 20px;
         }
     }
     .top_section_text {
@@ -214,11 +220,13 @@
         min-height: 80vh;
     }
 }
-.barra_contact {
-    width: 30px;
+.flecha_contact {
+    width: 50%;
+    rotate: 225deg;
     padding-left: 20px;
     margin-right: 20px;
     height: auto;
+    fill:#7774ec;
 }
 
 .card_content_title {
@@ -235,7 +243,7 @@
         margin-bottom: 20px;
     }
     @include breakpoint(xxs) {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -243,6 +251,7 @@
 .card_content_info {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     .card_content_p {
         font-weight: 300;
         font-size: 30px;
@@ -251,7 +260,7 @@
             font-size: 20px;
         }
         @include breakpoint(xs) {
-            font-size: 15px;
+            font-size: 12px;
             margin-right: 60px;
         }
     }
@@ -260,11 +269,11 @@
         background-color: #7774ec;
         font-weight: 500;
         color: white;
-        padding: 20px 50px;
+        padding: 10px 50px;
         border: none;
         border-radius: 10px;
         min-width: 30%;
-        font-size: 30px;
+        font-size: 25px;
         text-decoration: none;
         text-align: center;
     }
@@ -277,7 +286,7 @@
             font-weight: 400;
             padding: 10px 40px;
             min-width: 30%;
-            font-size: 20px;
+            font-size: 15px;
         }
     }
     @include breakpoint(xxs) {
@@ -338,6 +347,7 @@
     }
     &__title {
         font-size: 45px;
+        font-weight: 400;
         @include breakpoint(xxs) {
             font-size: 30px;
         }
@@ -352,19 +362,13 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        line-height:1.6rem;
         @include breakpoint(xxs) {
             margin-top: 10px;
         }
     }
 
-    &__horizontal-divider {
-        width: 100%;
-        height: 15px;
-        background: linear-gradient(to right, #4dcdc0, #8fd9cb, #a5eee7);
-        @include breakpoint(xxs) {
-            height: 10px;
-        }
-    }
+   
     @include breakpoint(md) {
         &__hand1 {
             width: 350px;
@@ -384,7 +388,7 @@
             font-size: 24px;
         }
         &__list {
-            font-size: 16px;
+            font-size: 12px;
         }
     }
     @include breakpoint(xxs) {
@@ -396,33 +400,53 @@
         }
     }
 }
+/*FOOTER */
+footer{
+    background-color: #3A3C40;
+
 .footer {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding: 50px 50px;
+    line-height: 2rem;
 
-    .footer_img_text {
-        display: flex;
+    img {
+        width: 250px;
+        border: none;
+    }
+    p {
         align-items: center;
-        img {
-            width: 1rem;
-        }
-        p {
-            align-items: center;
-            margin: 0;
-            font-size: 1rem;
-            @include breakpoint(xxs) {
-                font-size: 0.5rem;
-            }
+        margin: 0;
+        color:white;
+        font-size: 1rem;
+        @include breakpoint(xxs) {
+            font-size: 0.5rem;
         }
     }
 }
 
-.footer_logo {
-    float: right;
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    p{
+        color: white;
+        font-size: 20px;
+    }
+    .footer_web{
+        text-decoration: none;
+    }
+    a{
+        color: white;
+        
+    }
+    #footer_invisible{
+        font-size: 12px;
+    }
+.footer_logo-contact {
+    float: left;
     margin-right: 20px;
     color: white;
-    background-color: black;
+    background-color: #7774ec;
     padding: 5px;
     border-radius: 20px 20px;
     margin-left: 10px;
@@ -430,6 +454,39 @@
         margin-right: 10px;
     }
 }
+}
+.footer_social{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a{ 
+        background-color: white;
+        border-radius: 50px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 0 10px;
+        color:black;
+}
+}
+.footer_color-line {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #4dcdc0, #8fd9cb, #a5eee7);
+    @include breakpoint(xxs) {
+        height: 10px;
+    }
+}
+p{ 
+    padding:10px 50px;
+    color: white;
+}
+
+
+
+}
+
+
 /* FORM ERROR GRACIAS*/
 
 .invisible {
