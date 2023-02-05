@@ -403,72 +403,94 @@
 /*FOOTER */
 footer{
     background-color: #3A3C40;
-
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px;
+    padding: 50px 0;
     line-height: 2rem;
+    @include breakpoint(xs) {
+        flex-direction: column;
+        //padding: 30px;
+   }
 
-    img {
-        width: 250px;
+    .footer_logo-sein {
+        width: 200px;
         border: none;
-    }
-    p {
-        align-items: center;
-        margin: 0;
-        color:white;
-        font-size: 1rem;
-        @include breakpoint(xxs) {
-            font-size: 0.5rem;
+        @include breakpoint(xs) {
+            width: 200px;
+            padding: 30px;
         }
     }
-}
-
-.footer_contact{
+   .footer-content{
     display: flex;
     flex-direction: column;
     p{
         color: white;
-        font-size: 20px;
+        font-size: 1rem;
     }
     .footer_web{
         text-decoration: none;
     }
     a{
         color: white;
-        
+        font-size: 1rem;
     }
+    
     #footer_invisible{
         font-size: 12px;
+        @include breakpoint(xxs) {
+            display: none;
+        }
+
     }
-.footer_logo-contact {
-    float: left;
-    margin-right: 20px;
-    color: white;
-    background-color: #7774ec;
-    padding: 5px;
-    border-radius: 20px 20px;
-    margin-left: 10px;
-    @include breakpoint(xxs) {
-        margin-right: 10px;
+  
+    .footer_logo-contact {
+        float: left;
+        margin-right: 20px;
+        color: white;
+        background-color: #7774ec;
+        padding: 5px;
+        border-radius: 20px 20px;
+        margin-left: 10px;
+        @include breakpoint(xxs) {
+            margin-right: 2;
+        }
+     }
+     
+   }
+   .footer-content_links{
+    display: flex;
+    flex-direction: column-reverse;
+    p{
+        color: white;
+        font-size: 1rem;
     }
+
+    a{
+        color: white;
+        font-size: 1rem;
+    }
+
 }
 }
+
+
 .footer_social{
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-
     a{ 
         background-color: white;
-        border-radius: 50px;
-        padding: 5px;
+        border-radius: 100%;
+        padding: 4px 6px;
         text-decoration: none;
-        margin: 0 10px;
-        
+        margin: 10px 10px;
         color:black;
+    }
+  
+@include breakpoint(xxs) {
+    justify-content: space-around;
 }
+
 }
 .footer_color-line {
     width: 100%;
@@ -478,12 +500,11 @@ footer{
         height: 10px;
     }
 }
-p{ 
+.footer_text-end
+{ 
     padding:10px 50px;
     color: white;
 }
-
-
 
 }
 
